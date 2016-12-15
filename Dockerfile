@@ -1,11 +1,11 @@
 FROM centos:6.7
-RUN yum update 
-RUN yum install -y wget
+RUN yum update -y
+#RUN yum install -y wget
     
-RUN wget -O /tmp/Nessus-6.9.2-es7.x86_64.rpm \
+#RUN wget -O /tmp/Nessus-6.9.2-es7.x86_64.rpm \
     "https://s3.ap-south-1.amazonaws.com/innodemo/Nessus-6.9.2-es7.x86_64.rpm"
-RUN yum localinstall -y /tmp/Nessus-6.9.2-es7.x86_64.rpm    
+#RUN yum localinstall -y /tmp/Nessus-6.9.2-es7.x86_64.rpm    
     
-EXPOSE 8834
+#EXPOSE 8834
 
-ENTRYPOINT [ "/opt/nessus/sbin/nessusd" ]
+#ENTRYPOINT [ "/opt/nessus/sbin/nessusd" ]
