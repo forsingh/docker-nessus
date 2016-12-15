@@ -1,4 +1,4 @@
-FROM centos:6.7
+FROM centos:6.6
 RUN yum update -y
 RUN yum install -y wget
     
